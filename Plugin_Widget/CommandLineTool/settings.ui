@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Settings</class>
+ <widget class="QDialog" name="Settings">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>450</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>设置</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog#Settings{
+	background-color: rgb(250, 250, 250);
+}</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout" stretch="6,1">
+   <item>
+    <widget class="QFrame" name="frame_2">
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_6">
+        <property name="font">
+         <font>
+          <family>楷体</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>命令提示（用户）</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="0">
+       <widget class="QLabel" name="label_12">
+        <property name="font">
+         <font>
+          <family>楷体</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>提示信息</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QLabel" name="label_3">
+        <property name="font">
+         <font>
+          <family>楷体</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>宋体</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="4">
+       <widget class="QToolButton" name="selectButton_5">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <family>楷体</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QToolButton{
+	border-radius: 10px;
+}
+QToolButton:hover{
+	background-color: rgb(0, 200, 255);
+	border-radius: 10px;
+}</string>
+        </property>
+        <property name="text">
+         <string>颜色选择</string>
+        </property>
+        <property name="autoRaise">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label">
+        <property name="font">
+         <font>
+          <family>楷体</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>用户名</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="2" colspan="2">
+       <widget class="QLabel" name="label_11">
+        <property name="font">
+         <font>
+          <family>楷体</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2" colspan="3">
+       <widget class="QLineEdit" name="lineEdit">
+        <property name="font">
+         <font>
+          <family>楷体</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="maxLength">
+         <number>10</number>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="2" colspan="2">
+       <widget class="QLabel" name="label_7">
+        <property name="font">
+         <font>
+          <family>楷体</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_4">
+        <property name="font">
+         <font>
+          <family>楷体</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>背景色</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="4">
+       <widget class="QToolButton" name="selectButton_2">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <family>楷体</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QToolButton{
+	border-radius: 10px;
+}
+QToolButton:hover{
+	background-color: rgb(0, 200, 255);
+	border-radius: 10px;
+}</string>
+        </property>
+        <property name="text">
+         <string>颜色选择</string>
+        </property>
+        <property name="autoRaise">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_2">
+        <property name="font">
+         <font>
+          <family>楷体</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>字体</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="4">
+       <widget class="QToolButton" name="selectButton_3">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <family>楷体</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QToolButton{
+	border-radius: 10px;
+}
+QToolButton:hover{
+	background-color: rgb(0, 200, 255);
+	border-radius: 10px;
+}</string>
+        </property>
+        <property name="text">
+         <string>颜色选择</string>
+        </property>
+        <property name="autoRaise">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0" colspan="2">
+       <widget class="QLabel" name="label_8">
+        <property name="font">
+         <font>
+          <family>楷体</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>命令提示（管理员）</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="4">
+       <widget class="QToolButton" name="selectButton_6">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <family>楷体</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QToolButton{
+	border-radius: 10px;
+}
+QToolButton:hover{
+	background-color: rgb(0, 200, 255);
+	border-radius: 10px;
+}</string>
+        </property>
+        <property name="text">
+         <string>颜色选择</string>
+        </property>
+        <property name="autoRaise">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QLabel" name="label_10">
+        <property name="font">
+         <font>
+          <family>楷体</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>用户命令</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="4">
+       <widget class="QToolButton" name="selectButton">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <family>楷体</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QToolButton{
+	border-radius: 10px;
+}
+QToolButton:hover{
+	background-color: rgb(0, 200, 255);
+	border-radius: 10px;
+}</string>
+        </property>
+        <property name="text">
+         <string>字体选择</string>
+        </property>
+        <property name="autoRaise">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="2" colspan="2">
+       <widget class="QLabel" name="label_5">
+        <property name="font">
+         <font>
+          <family>楷体</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="4">
+       <widget class="QToolButton" name="selectButton_4">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <family>楷体</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QToolButton{
+	border-radius: 10px;
+}
+QToolButton:hover{
+	background-color: rgb(0, 200, 255);
+	border-radius: 10px;
+}</string>
+        </property>
+        <property name="text">
+         <string>颜色选择</string>
+        </property>
+        <property name="autoRaise">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="2" colspan="2">
+       <widget class="QLabel" name="label_13">
+        <property name="font">
+         <font>
+          <family>楷体</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="2" colspan="2">
+       <widget class="QLabel" name="label_9">
+        <property name="font">
+         <font>
+          <family>楷体</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QFrame" name="frame">
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <property name="spacing">
+       <number>30</number>
+      </property>
+      <property name="leftMargin">
+       <number>11</number>
+      </property>
+      <property name="topMargin">
+       <number>11</number>
+      </property>
+      <property name="rightMargin">
+       <number>11</number>
+      </property>
+      <property name="bottomMargin">
+       <number>11</number>
+      </property>
+      <item>
+       <widget class="QToolButton" name="saveButton">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <family>楷体</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QToolButton{
+	border-radius: 10px;
+}
+QToolButton:hover{
+	background-color: rgb(0, 200, 255);
+	border-radius: 10px;
+}</string>
+        </property>
+        <property name="text">
+         <string>保存设置</string>
+        </property>
+        <property name="autoRaise">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="recoverButton">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <family>楷体</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QToolButton{
+	border-radius: 10px;
+}
+QToolButton:hover{
+	background-color: rgb(0, 200, 255);
+	border-radius: 10px;
+}</string>
+        </property>
+        <property name="text">
+         <string>恢复默认设置</string>
+        </property>
+        <property name="autoRaise">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="cancelButton">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <family>楷体</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QToolButton{
+	border-radius: 10px;
+}
+QToolButton:hover{
+	background-color: rgb(0, 200, 255);
+	border-radius: 10px;
+}</string>
+        </property>
+        <property name="text">
+         <string>取消</string>
+        </property>
+        <property name="autoRaise">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

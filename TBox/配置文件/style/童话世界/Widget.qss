@@ -1,0 +1,196 @@
+/*通用*/
+QWidget{
+	border:1px solid rgb(82,63,108);
+}
+QGroupBox{
+	color: rgb(250, 250, 250);
+}
+QComboBox{
+	border-top-left-radius: 5px;
+	border-top-right-radius:5px;
+	background-color:rgb(90, 71, 120);
+	color:rgb(250,250,250);
+}
+QComboBox::drop-down{
+	border:0px;
+}
+QComboBox QAbstractItemView{
+	border:none;
+	background-color:rgb(90, 71, 120);
+	color:rgb(250,250,250);
+	selection-background-color: rgb(250, 250, 250);
+	selection-color: rgb(90, 71, 120);
+}
+QSlider{
+	border:none;
+}
+QSlider::groove:horizontal {
+	border: 0px solid rgb(255,0,0);
+	height: 6px;
+}
+QSlider::sub-page:horizontal {
+	background-color: rgb(99,86,122);
+}
+QSlider::add-page:horizontal {
+	background-color: rgb(255, 255, 255);
+}
+QSlider::handle:horizontal {
+	margin: -7 0 -7 0;
+	width: 18px;
+	border-radius: 9px;
+	background-color:rgb(250,250,250);
+}
+QScrollBar:vertical{
+	border: none;
+	width:8px;
+	margin: 0 0 0 0;
+	background: transparent;
+}
+QScrollBar::handle:vertical{
+	background: rgb(220, 220, 220);
+	border-radius:4px;
+}
+QScrollBar::handle:vertical:hover{
+	background: rgb(240, 240, 240);
+	border-radius:4px;
+}
+QScrollBar::handle:vertical:pressed{
+	background: rgb(218, 102, 236);
+	border-radius:4px;
+}
+QScrollBar::add-page,QScrollBar::sub-page:vertical{
+	background: transparent;
+}
+QScrollBar::add-line,QScrollBar::sub-line:vertical{
+	background: transparent;
+}
+QScrollBar:horizontal{
+	border: none;
+	height:8px;
+	margin: 0 0 0 0;
+	background: transparent;
+}
+QScrollBar::handle:horizontal{
+	background: rgb(220, 220, 220);
+	border-radius:4px;
+}
+QScrollBar::handle:horizontal:hover{
+	background: rgb(240, 240, 240);
+	border-radius:4px;
+}
+QScrollBar::handle:horizontal:pressed{
+	background: rgb(218, 102, 236);
+	border-radius:4px;
+}
+QScrollBar::add-page,QScrollBar::sub-page:horizontal{
+	background: transparent;
+}
+QScrollBar::add-line,QScrollBar::sub-line:horizontal{
+	background: transparent;
+}
+/*标题栏样式*/
+#titleWidget{
+	background-color:rgb(136,12,160);
+	border:none;
+}
+#tabWidget{
+	border:none;
+}
+#returnButton,#closeButton{
+	border:none;
+}
+#returnButton:hover,#closeButton:hover{
+	border:none;
+	border-radius:12px;
+	background-color:rgb(250,250,250);
+}
+/*侧边栏样式*/
+#sideWidget{
+	background-color:rgb(90,71,120);
+	border-right:none;
+}
+#TBoxLabel{
+	color:rgb(250,250,250);
+	border-right:none;
+}
+#TBoxVersionLabel{
+	color:rgb(250,250,250);
+	border-left:none;
+	border-right:none;
+}
+#firstButton,#manageButton,#settingsButton,#aboutButton{
+	border:none;
+	color:rgb(220,220,220);
+}
+#firstButton:hover,#manageButton:hover,#settingsButton:hover,#aboutButton:hover{
+	border:none;
+	color:rgb(240,240,240);
+}
+#firstButton:disabled,#manageButton:disabled,#settingsButton:disabled,#aboutButton:disabled{
+	color:rgb(250,250,250);
+	background-color:rgb(143,117,150);
+	border-left:2px solid rgb(213,192,207);
+	border-top-right-radius:5px;
+	border-bottom-right-radius:5px;
+}
+/*栈窗口样式*/
+#firstPage,#managePage,#settingsPage,#aboutPage{
+	background-color:rgb(58, 41, 87);
+	border-top:none;
+}
+#firstPageLabel,#managePageLabel,#settingsPageLabel,#aboutPageLabel,#TBoxLabel_2,#TBoxVersionLabel_2,#authorLabel,#label{
+	border:none;
+	color:rgb(250,250,250);
+}
+/*首页*/
+#firstPage{
+	border-image:url(style/童话世界/picture.jpg);
+}
+/*管理页样式*/
+#findWidget{
+	background-color: rgb(90, 71, 120);
+	border:none;
+	border-radius:5px;
+}
+#findButton,#clearButton{
+	border:none;
+}
+#findLineEdit{
+	border:none;
+	background-color: rgb(90, 71, 120);
+	color: rgb(250, 250, 250);
+	selection-background-color: rgb(250, 250, 250);
+	selection-color: rgb(90, 71, 120);
+}
+#listWidget{
+	background:transparent;
+	border:none;
+}
+#listWidget::item:hover{
+	background-color:rgb(143, 117, 150);
+	border-radius:5px;
+}
+/*设置页样式*/
+#themeLabel,#windowOpacityLabel,#backgroundLabel,#hoverBallLabel,#trayLabel,#speedLabel,#modeLabel,#logoPictureLabel,#interfaceLabel,#myLogoLabel,#versionUpdateLabel{
+	border:none;
+	color:rgb(250,250,250);
+}
+#saveButton,#downloadButton,#versionUpdateButton{
+	border-radius:5px;
+	color: rgb(250, 250, 250);
+	background-color: rgb(218, 102, 236);
+}
+#saveButton:hover,#downloadButton:hover,#versionUpdateButton:hover{
+	border-radius:5px;
+	color: rgb(250, 250, 250);
+	background-color: rgb(164, 88, 186);
+}
+/*关于页样式*/
+#aboutWidget{
+	border:none;
+}
+#aboutTextEdit{
+	border:none;
+	color: rgb(250, 250, 250);
+	background-color: rgb(90, 71, 120);
+}

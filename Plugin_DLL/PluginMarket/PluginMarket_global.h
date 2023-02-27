@@ -1,0 +1,12 @@
+#ifndef PLUGINMARKET_GLOBAL_H
+#define PLUGINMARKET_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(PLUGINMARKET_LIBRARY)
+#  define PLUGINMARKET_EXPORT Q_DECL_EXPORT
+#else
+#  define PLUGINMARKET_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // PLUGINMARKET_GLOBAL_H

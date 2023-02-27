@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>InstallWidget</class>
+ <widget class="QDialog" name="InstallWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>550</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QScrollBar:vertical{
+	border: none;
+	width:8px;
+	margin: 0 0 0 0;
+	background: transparent;
+}
+QScrollBar::handle:vertical{
+	background: rgb(200, 200, 200);
+	border-radius:4px;
+}
+QScrollBar::handle:vertical:hover{
+	background: rgb(240, 240, 240);
+	border-radius:4px;
+}
+QScrollBar::handle:vertical:pressed{
+	background: rgb(255, 120, 10);
+	border-radius:4px;
+}
+QScrollBar::add-page,QScrollBar::sub-page:vertical{
+	background: transparent;
+}
+QScrollBar::add-line,QScrollBar::sub-line:vertical{
+	background: transparent;
+}
+QWidget{
+	background-color: rgb(49, 49, 49);
+}</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout" rowstretch="8,1" columnstretch="1,1,1" rowminimumheight="0,0">
+   <item row="0" column="0" colspan="3">
+    <widget class="QTextEdit" name="textEdit">
+     <property name="font">
+      <font>
+       <family>宋体</family>
+       <pointsize>16</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QTextEdit{
+	border:1px solid rgb(250,250,250);
+	border-radius:5px;
+	color: rgb(250, 250, 250);
+	background:transparent;
+}</string>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QPushButton" name="installButton">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="font">
+      <font>
+       <family>楷体</family>
+       <pointsize>16</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	border-radius:5px;
+	color: rgb(250, 250, 250);
+	background-color: rgb(5, 160, 255);
+}
+QPushButton:hover{
+	border-radius:5px;
+	color: rgb(250, 250, 250);
+	background-color: rgb(10, 222, 255);
+}</string>
+     </property>
+     <property name="text">
+      <string>提交</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="2">
+    <widget class="QPushButton" name="cancelButton">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="font">
+      <font>
+       <family>楷体</family>
+       <pointsize>16</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	border-radius:5px;
+	color: rgb(250, 250, 250);
+	background-color: rgb(64, 64, 64);
+}
+QPushButton:hover{
+	border-radius:5px;
+	color: rgb(250, 250, 250);
+	background-color: rgb(120, 120, 120);
+}</string>
+     </property>
+     <property name="text">
+      <string>取消</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <spacer name="horizontalSpacer">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>40</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

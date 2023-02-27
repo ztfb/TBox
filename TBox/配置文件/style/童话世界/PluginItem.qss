@@ -1,0 +1,9 @@
+QWidget{
+	border:none;
+	color:rgb(250,250,250);
+}
+#runButton:hover,#deleteButton:hover{
+	border:none;
+	border-radius:5px;
+	background-color:rgb(250,250,250);
+}

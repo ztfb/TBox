@@ -1,0 +1,41 @@
+QScrollBar:vertical{
+	border: none;
+	width:8px;
+	margin: 0 0 0 0;
+	background: transparent;
+}
+QScrollBar::handle:vertical{
+	background: rgb(200, 200, 200);
+	border-radius:4px;
+}
+QScrollBar::handle:vertical:hover{
+	background: rgb(240, 240, 240);
+	border-radius:4px;
+}
+QScrollBar::handle:vertical:pressed{
+	background: rgb(5, 160, 255);
+	border-radius:4px;
+}
+QScrollBar::add-page,QScrollBar::sub-page:vertical{
+	background: transparent;
+}
+QScrollBar::add-line,QScrollBar::sub-line:vertical{
+	background: transparent;
+}
+#installButton,#cancelButton{
+	border:none;
+	color: rgb(0, 0, 0);
+	background:transparent;
+}
+#installButton:hover,#cancelButton:hover{
+	border-radius:5px;
+	border:1px solid rgb(250,250,250);
+	background-color:rgb(5,160,255);
+	color: rgb(0, 0, 0);
+}
+#textEdit{
+	border:1px solid rgb(0,0,0);
+	border-radius:5px;
+	color: rgb(0, 0, 0);
+	background:transparent;
+}

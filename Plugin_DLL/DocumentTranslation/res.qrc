@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/">
+        <file>resource/DocumentTranslation.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>文献翻译</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget{
+	background-color: rgba(250, 250, 250, 250);
+	border:none;
+}
+QGroupBox{
+	color: rgb(0, 0, 0);
+	border:1px solid rgb(200,200,200);
+}
+QScrollBar:vertical{
+	border: none;
+	width:8px;
+	margin: 0 0 0 0;
+	background: transparent;
+}
+QScrollBar::handle:vertical{
+	background: rgb(200, 200, 200);
+	border-radius:4px;
+}
+QScrollBar::handle:vertical:hover{
+	background: rgb(160, 160, 160);
+	border-radius:4px;
+}
+QScrollBar::handle:vertical:pressed{
+	background: rgb(5, 160, 255);
+	border-radius:4px;
+}
+QScrollBar::add-page,QScrollBar::sub-page:vertical{
+	background: transparent;
+}
+QScrollBar::add-line,QScrollBar::sub-line:vertical{
+	background: transparent;
+}
+QLabel{
+	color: rgb(0, 0, 0);
+}
+QTextEdit{
+	border-radius:5px;
+	border:1px solid rgb(200,200,200);
+	background-color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+}
+QLineEdit{
+	border-radius:5px;
+	border:1px solid rgb(200,200,200);
+	background-color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+}
+QPushButton{
+	border-radius:5px;
+	color: rgb(0,0, 0);
+	background-color: rgb(255, 255, 225);
+}
+QPushButton:hover{
+	border-radius:5px;
+	color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 252);
+}</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QGroupBox" name="groupbox_2">
+     <property name="font">
+      <font>
+       <family>楷体</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="title">
+      <string>翻译悬浮窗</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2" columnstretch="1,1,1,1,1,1,6,1,1,0">
+      <property name="topMargin">
+       <number>25</number>
+      </property>
+      <item row="0" column="8">
+       <widget class="QPushButton" name="savebutton">
+        <property name="font">
+         <font>
+          <family>楷体</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>保存</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0" colspan="10">
+       <widget class="QTextEdit" name="textEdit">
+        <property name="font">
+         <font>
+          <family>楷体</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+        <property name="html">
+         <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'楷体'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'楷体';&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="3">
+       <widget class="SwitchButton" name="showSwitch" native="true"/>
+      </item>
+      <item row="0" column="9">
+       <widget class="QPushButton" name="helpbutton">
+        <property name="font">
+         <font>
+          <family>楷体</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>使用说明</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="SwitchButton" name="startSwitch" native="true"/>
+      </item>
+      <item row="0" column="6">
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>353</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="0" column="2">
+       <widget class="QLabel" name="showLabel">
+        <property name="font">
+         <font>
+          <family>楷体</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>显示</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="4">
+       <widget class="QLabel" name="topLabel">
+        <property name="font">
+         <font>
+          <family>楷体</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>置顶</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="startLabel">
+        <property name="font">
+         <font>
+          <family>楷体</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>开启</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="5">
+       <widget class="SwitchButton" name="topSwitch" native="true"/>
+      </item>
+      <item row="0" column="7">
+       <widget class="QPushButton" name="clearbutton">
+        <property name="font">
+         <font>
+          <family>楷体</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>清空</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupbox_3">
+     <property name="font">
+      <font>
+       <family>楷体</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="title">
+      <string>加强剪切板</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_4" columnstretch="1,1,10,1,1,0">
+      <property name="topMargin">
+       <number>25</number>
+      </property>
+      <item row="0" column="2">
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>614</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="1" column="0" colspan="6">
+       <widget class="QTextEdit" name="textEdit_2">
+        <property name="font">
+         <font>
+          <family>楷体</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="startLabel_2">
+        <property name="font">
+         <font>
+          <family>楷体</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>开启</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="SwitchButton" name="startSwitch_2" native="true"/>
+      </item>
+      <item row="0" column="4">
+       <widget class="QPushButton" name="savebutton_2">
+        <property name="font">
+         <font>
+          <family>楷体</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>保存</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="5">
+       <widget class="QPushButton" name="helpbutton_2">
+        <property name="font">
+         <font>
+          <family>楷体</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>使用说明</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="3">
+       <widget class="QPushButton" name="clearbutton_2">
+        <property name="font">
+         <font>
+          <family>楷体</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>清空</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupbox">
+     <property name="font">
+      <font>
+       <family>楷体</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="title">
+      <string>开发者密钥</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout" columnstretch="1,5,2,3">
+      <property name="topMargin">
+       <number>25</number>
+      </property>
+      <item row="0" column="0">
+       <widget class="QLabel" name="typeLabel">
+        <property name="font">
+         <font>
+          <family>楷体</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>翻译引擎</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLabel" name="urlLabel">
+        <property name="font">
+         <font>
+          <family>楷体</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>前缀URL</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QLabel" name="appidLabel">
+        <property name="font">
+         <font>
+          <family>楷体</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>开发者ID</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="3">
+       <widget class="QLabel" name="keyLabel">
+        <property name="font">
+         <font>
+          <family>楷体</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>开发者密钥</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLineEdit" name="youdaolineEdit">
+        <property name="font">
+         <font>
+          <family>楷体</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>有道翻译</string>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="urlLineEdit_2">
+        <property name="font">
+         <font>
+          <family>楷体</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QLineEdit" name="appidLineEdit_2">
+        <property name="font">
+         <font>
+          <family>楷体</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="3">
+       <widget class="QLineEdit" name="keyLineEdit_2">
+        <property name="font">
+         <font>
+          <family>楷体</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLineEdit" name="baidulineEdit">
+        <property name="font">
+         <font>
+          <family>楷体</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>百度翻译</string>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="urlLineEdit">
+        <property name="font">
+         <font>
+          <family>楷体</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="2">
+       <widget class="QLineEdit" name="appidLineEdit">
+        <property name="font">
+         <font>
+          <family>楷体</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="3">
+       <widget class="QLineEdit" name="keyLineEdit">
+        <property name="font">
+         <font>
+          <family>楷体</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>SwitchButton</class>
+   <extends>QWidget</extends>
+   <header location="global">Element.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

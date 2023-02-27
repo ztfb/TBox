@@ -1,0 +1,24 @@
+QFrame{
+	border-radius:5px;
+	background:rgb(39,39,39);
+}
+QToolButton{
+	border:none;
+}
+QToolButton:hover{
+	border:none;
+	border-radius:12px;
+	background-color:rgb(250,250,250);
+}
+QLabel{
+	border:none;
+	color:rgb(120,120,120);
+}
+QLabel:hover{
+	border:none;
+	color:rgb(180,180,180);
+}
+QLabel:disabled{
+	border:none;
+	color:rgb(255,255,255);
+}

@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>文件处理工具</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget{
+	border:none;
+	background-color: rgb(245, 245, 245);
+}
+QGroupBox{
+	color: rgb(0, 0, 0);
+	border:1px solid rgb(200,200,200);
+}
+QComboBox{
+	border:1px solid rgb(200,200,200);
+	border-top-left-radius: 5px;
+	border-top-right-radius:5px;
+	background-color: rgb(255, 255, 255);
+	color:rgb(0,0,0);
+}
+QComboBox::drop-down{
+	border:0px;
+}
+QComboBox QAbstractItemView{
+	border:none;
+	background-color:rgb(255, 255, 255);
+	color:rgb(0,0,0);
+	selection-background-color: rgb(200, 200, 200);
+	selection-color:rgb(255, 255, 255);
+}
+QScrollBar:vertical{
+	border: none;
+	width:8px;
+	margin: 0 0 0 0;
+	background: transparent;
+}
+QScrollBar::handle:vertical{
+	background: rgb(200, 200, 200);
+	border-radius:4px;
+}
+QScrollBar::handle:vertical:hover{
+	background: rgb(160, 160, 160);
+	border-radius:4px;
+}
+QScrollBar::handle:vertical:pressed{
+	background: rgb(5, 160, 255);
+	border-radius:4px;
+}
+QScrollBar::add-page,QScrollBar::sub-page:vertical{
+	background: transparent;
+}
+QScrollBar::add-line,QScrollBar::sub-line:vertical{
+	background: transparent;
+}
+QLabel{
+	color: rgb(0, 0, 0);
+	background:transparent;
+}
+QLineEdit{
+	border-radius:5px;
+	border:1px solid rgb(200,200,200);
+	background-color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+	selection-background-color: rgb(0, 0, 0);
+	selection-color: rgb(255, 255, 255);
+}
+QPushButton{
+	color: rgb(0, 0, 0);
+	border-radius:5px;
+	background-color: rgb(0, 200, 250);
+}
+QPushButton:hover{
+	color: rgb(0, 0, 0);
+	border-radius:5px;
+	background-color: rgb(0, 210, 255);
+}
+QSpinBox {
+	border:1px solid rgb(200,200,200);
+	border-radius:5px;
+	background-color: rgb(255, 255, 255);
+}</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <property name="leftMargin">
+    <number>5</number>
+   </property>
+   <property name="topMargin">
+    <number>5</number>
+   </property>
+   <property name="rightMargin">
+    <number>5</number>
+   </property>
+   <property name="bottomMargin">
+    <number>5</number>
+   </property>
+   <property name="spacing">
+    <number>5</number>
+   </property>
+   <item row="0" column="0">
+    <widget class="QGroupBox" name="groupbox">
+     <property name="font">
+      <font>
+       <family>楷体</family>
+       <pointsize>16</pointsize>
+      </font>
+     </property>
+     <property name="title">
+      <string>文件加密</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_3">
+      <item row="0" column="0">
+       <widget class="QLineEdit" name="filepathlineEdit_2">
+        <property name="font">
+         <font>
+          <family>楷体</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QPushButton" name="selectfileButton_2">
+        <property name="font">
+         <font>
+          <family>楷体</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>选择待处理文件</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLineEdit" name="keylineEdit">
+        <property name="font">
+         <font>
+          <family>楷体</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="readOnly">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QPushButton" name="crypyButton">
+        <property name="font">
+         <font>
+          <family>楷体</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>文件加密/解密</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QGroupBox" name="groupbox_2">
+     <property name="font">
+      <font>
+       <family>楷体</family>
+       <pointsize>16</pointsize>
+      </font>
+     </property>
+     <property name="title">
+      <string>文件哈希</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="0" column="0">
+       <widget class="QLineEdit" name="filepathlineEdit">
+        <property name="font">
+         <font>
+          <family>楷体</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="3">
+       <widget class="QToolButton" name="helpButton">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="res.qrc">
+          <normaloff>:/resource/help.png</normaloff>:/resource/help.png</iconset>
+        </property>
+        <property name="autoRaise">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2" colspan="2">
+       <widget class="QPushButton" name="copyButton">
+        <property name="font">
+         <font>
+          <family>楷体</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>复制哈希值</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QPushButton" name="generateButton">
+        <property name="font">
+         <font>
+          <family>楷体</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>生成哈希值</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QComboBox" name="algorithmcomboBox">
+        <property name="font">
+         <font>
+          <family>楷体</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <item>
+         <property name="text">
+          <string>MD4</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>MD5</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>SHA1</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>SHA2-224</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>SHA2-256</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>SHA2-384</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>SHA2-512</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>SHA3-224</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>SHA3-256</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>SHA3-384</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>SHA3-512</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLineEdit" name="hashvaluelineEdit">
+        <property name="font">
+         <font>
+          <family>楷体</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QPushButton" name="selectfileButton">
+        <property name="font">
+         <font>
+          <family>楷体</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>选择文件</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QGroupBox" name="groupbox_3">
+     <property name="font">
+      <font>
+       <family>楷体</family>
+       <pointsize>16</pointsize>
+      </font>
+     </property>
+     <property name="title">
+      <string>批量重命名</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_4" rowminimumheight="0,0,0">
+      <item row="0" column="0">
+       <widget class="QLabel" name="prefixlabel">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <family>楷体</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>前缀固定字段</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLabel" name="numberlabel">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <family>楷体</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>起始量</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QLabel" name="numberlabel_2">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <family>楷体</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>增量</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="3" colspan="2">
+       <widget class="QLabel" name="suffixlabel">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <family>楷体</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>后缀固定字段</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="5">
+       <widget class="QLabel" name="suffixlabel_2">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <family>楷体</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>后缀名</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLineEdit" name="prefixlineEdit">
+        <property name="font">
+         <font>
+          <family>楷体</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="readOnly">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QSpinBox" name="spinBox">
+        <property name="font">
+         <font>
+          <family>楷体</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="minimum">
+         <number>-999999999</number>
+        </property>
+        <property name="maximum">
+         <number>999999999</number>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QSpinBox" name="spinBox_2">
+        <property name="font">
+         <font>
+          <family>楷体</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="minimum">
+         <number>0</number>
+        </property>
+        <property name="maximum">
+         <number>999999999</number>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="3" colspan="2">
+       <widget class="QLineEdit" name="suffixlineEdit">
+        <property name="font">
+         <font>
+          <family>楷体</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="readOnly">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="5">
+       <widget class="QLineEdit" name="suffixlineEdit_2">
+        <property name="font">
+         <font>
+          <family>楷体</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="readOnly">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0" colspan="4">
+       <widget class="QLabel" name="filelabel">
+        <property name="font">
+         <font>
+          <family>楷体</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>已选择...个文件</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="4">
+       <widget class="QPushButton" name="selectfileButton_3">
+        <property name="font">
+         <font>
+          <family>楷体</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>批量选择文件</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="5">
+       <widget class="QPushButton" name="renameButton">
+        <property name="font">
+         <font>
+          <family>楷体</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>重命名</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections/>
+</ui>

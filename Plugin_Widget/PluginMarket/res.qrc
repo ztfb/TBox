@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>resource/download.png</file>
+        <file>resource/find.png</file>
+        <file>resource/settings.png</file>
+    </qresource>
+</RCC>

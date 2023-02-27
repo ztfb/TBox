@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/">
+        <file>resource/heart.png</file>
+        <file>resource/seed.png</file>
+        <file>resource/time.gif</file>
+        <file>resource/toy-0.png</file>
+        <file>resource/toy-1.png</file>
+        <file>resource/toy-2.png</file>
+    </qresource>
+</RCC>
