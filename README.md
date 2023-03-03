@@ -4,7 +4,7 @@
 
 TBox是一款基于Qt C++的插件管理器。用户可以自行选择安装所需的插件，将TBox打造成专属于自己的效率工具。TBox基本界面如下：
 
-<img src="https://gitee.com/tian-wenzhuo/tbox.git/image/首页.png" style="zoom:50%;" />
+<img src="image/偏好设置页.png" style="zoom:50%;" />
 
 <img src="image\插件管理页.png" style="zoom:50%;" />
 
