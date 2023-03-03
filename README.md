@@ -6,11 +6,11 @@ TBox是一款基于Qt C++的插件管理器。用户可以自行选择安装所�
 
 <img src="image/偏好设置页.png" style="zoom:50%;" />
 
-<img src="image\插件管理页.png" style="zoom:50%;" />
+<img src="image/插件管理页.png" style="zoom:50%;" />
 
-<img src="image\偏好设置页.png" style="zoom:50%;" />
+<img src="image/偏好设置页.png" style="zoom:50%;" />
 
-<img src="image\关于页.png" style="zoom:50%;" />
+<img src="image/关于页.png" style="zoom:50%;" />
 
 ### 2. 使用说明
 
@@ -23,24 +23,24 @@ TBox是一款基于Qt C++的插件管理器。用户可以自行选择安装所�
 
 ### 1. 命令行工具
 
-<img src="image\命令行工具插件.png" style="zoom:50%;" />
+<img src="image/命令行工具插件.png" style="zoom:50%;" />
 
 ### 2. 桌面宠物
 
-<img src="image\桌面宠物插件.png" style="zoom:50%;" />
+<img src="image/桌面宠物插件.png" style="zoom:50%;" />
 
 ### 3. 文献翻译
 
-<img src="image\文献翻译插件.png" style="zoom:50%;" />
+<img src="image/文献翻译插件.png" style="zoom:50%;" />
 
 ### 4. 文件处理工具
 
-<img src="image\文件处理工具插件.png" style="zoom:50%;" />
+<img src="image/文件处理工具插件.png" style="zoom:50%;" />
 
 ### 5. 插件市场
 
-<img src="image\插件市场插件.png" style="zoom:50%;" />
+<img src="image/插件市场插件.png" style="zoom:50%;" />
 
 ### 6. 设置扩展
 
-<img src="image\设置扩展插件.png" style="zoom:50%;" />
+<img src="image/设置扩展插件.png" style="zoom:50%;" />
