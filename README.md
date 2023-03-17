@@ -37,10 +37,14 @@ TBox是一款基于Qt C++的插件管理器。用户可以自行选择安装所�
 
 <img src="image/文件处理工具插件.png" style="zoom:50%;" />
 
-### 5. 插件市场
+### 5.医学图像浏览器
+
+<img src="image/医学图像浏览器插件.png" style="zoom:50%;" />
+
+### 6. 插件市场
 
 <img src="image/插件市场插件.png" style="zoom:50%;" />
 
-### 6. 设置扩展
+### 7. 设置扩展
 
 <img src="image/设置扩展插件.png" style="zoom:50%;" />

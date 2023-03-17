@@ -50,6 +50,7 @@ void InstallWidget::showPlugin(QString dllPath, QString configPath){
             if(loader->unload()){// 卸载插件
                 delete loader;loader=nullptr;
             }
+            qDebug()<<1;
             IID=jsonObject.value("IID").toString();
             data=jsonObject.value("MetaData").toObject();
             ui->textEdit->clear();
